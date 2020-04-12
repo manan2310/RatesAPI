@@ -4,34 +4,21 @@
 package com.mycompany.ratesapiservice.bean;
 
 import java.util.Date;
+import java.util.Map;
 
 public class RatesBean
 {
 	String base;
-	String rates;
+	Map<String,Double> rates;
 	Date date;
 	
-
-	public RatesBean()
-	{
-		super();
-	}
-
-	public RatesBean(String base,String rates)
-	{
-		this.base=base;
-		this.rates=rates;
-	}
 
 	public String getbase()
 	{
 		return base;
 	}
 
-	public String getrates()
-	{
-		return rates;
-	}
+	
 
 	public Date getdate()
 	{
@@ -45,20 +32,28 @@ public class RatesBean
 		this.base=base;
 	}
 
-	public void setrates(String rates)
+	public Map<String,Double> getRates()
 	{
-		this.rates=rates;
+		return rates;
 	}
 
-	public void setdate(Date date)
+	public void setRates(Map<String,Double> rates)
 	{
-		this.date=date;
+		this.rates=rates;
 	}
 
 	@Override
 	public String toString()
 	{
-		return "RatesBean [base="+base+", rates="+rates+", date="+date+"]";
+		return "RatesBean [base="+base+", rates="+rates+", date="+ date+"]";
 	}
+
+	
+	public void setdate(Date date)
+	{
+		this.date=date;
+	}
+
+	
 
 }

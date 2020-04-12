@@ -1,0 +1,12 @@
+<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
+<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+<div class="footer">
+	<h1>
+		Rates API
+	</h1>
+	Rates API is a free service for current and historical foreign exchange rates.
+</div>
+</body>
+</html>
